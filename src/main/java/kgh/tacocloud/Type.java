@@ -1,5 +1,5 @@
-package kgh.tacocloud;
-
-public enum Type {
-    WRAP, PROTEIN, VEGGIES, CHEESE, SAUCE
-}
+//package kgh.tacocloud;
+//
+//public enum Type {
+//    WRAP, PROTEIN, VEGGIES, CHEESE, SAUCE
+//}

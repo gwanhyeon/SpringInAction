@@ -42,7 +42,7 @@ public class DesignTacoController {
     @GetMapping
     public String showDesignForm(Model model) {
         List<Ingredient> ingredients = new ArrayList<>();
-        ingredientRepo.findAll().forEach(i -> ingredients.add(i));
+        //ingredientRepo.findAll().forEach(i -> ingredients.add(i));
 
         Ingredient.Type[] types = Ingredient.Type.values();
 
@@ -79,7 +79,6 @@ public class DesignTacoController {
         if (errors.hasErrors()) {
             return "design";
         }
-
         Taco saved = tacoRepo.save(design);
         order.addDesign(saved);
 
